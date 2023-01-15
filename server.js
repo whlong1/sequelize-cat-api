@@ -2,13 +2,13 @@ const express = require('express')
 const logger = require('morgan')
 const cors = require("cors")
 
-// import routers
+// Import Routers
 const indexRouter = require('./routes/index.js')
 
 // Initialize app 
 const app = express()
 
-// middleware
+// Middleware
 app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
