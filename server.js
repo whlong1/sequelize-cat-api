@@ -3,6 +3,7 @@ const logger = require('morgan')
 const cors = require("cors")
 
 // Import Routers
+const catsRouter = require('./routes/cats.js')
 const indexRouter = require('./routes/index.js')
 
 // Initialize app 
@@ -15,6 +16,7 @@ app.use(express.json())
 
 // Mounted Routers
 app.use('/', indexRouter)
+app.use('/api/cats', catsRouter)
 
 app.use(function (req, res, next) {
   res.status(404).json({ err: 'Not found' })
