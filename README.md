@@ -1,4 +1,4 @@
-# Cat API
+# Sequelize Cat API
 This API allows you to perform CRUD operations on a database of cats!
 
 ## Endpoints
